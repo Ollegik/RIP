@@ -1,0 +1,36 @@
+.handler{
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+
+.spisok{
+    position: absolute;
+    top: 190px;
+    left: 600px;
+    }
+
+h1{
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    font-size: 30px;
+}
+
+.vipad{
+    position: absolute;
+    top: 207px;
+    left: 685px;
+}
+
+.text_spisok{
+    position: absolute;
+    top: 217px;
+    left: 685px;
+}
+
+.pole1{
+    position: absolute;
+    top: 0px;
+    left: 800px
+}
