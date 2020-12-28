@@ -1,0 +1,95 @@
+html {
+   
+   
+    background: #2e2e2e; 
+
+}
+
+* {box-sizing: border-box;}
+/** body {font-family: 'Bebas Neue', 'Castoro', cursive; } **/
+
+
+
+        /** body {
+    background: #454545; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;  
+    max-width: 800px;
+    padding: 2em 2em 4em;
+} **/
+
+
+/**ЦЕНТРИРОВАНИЕ ВЕРТИКАЛЬ+ГОРИЗОНТАЛЬ**/
+ 
+
+h1{
+    
+    font-family: 'Bebas Neue', cursive;
+    color: #f2f2f2;
+    height: 50;
+    font-size: 65px;
+    text-align: center;
+    padding: 0px
+    color: #454545;
+    margin: 0 auto;
+    
+   }
+
+.p1{
+    color: crimson;
+    font-family: 'Bebas Neue', cursive;
+    
+    width: 200;
+    height: 65;
+    font-size: 20px;
+    text-align: center; 
+    margin: 50px 660px;
+}
+
+/**--------------------------------------------------------------------------------**/
+
+
+
+/* Sidebar CSS
+-------------------------------------------------*/
+
+         a{
+             text-decoration: none; 
+         }
+
+
+ 
+
+
+ 
+
+.sidebar_menu a {
+font-family: 'Bebas Neue', cursive;
+font-size:30px;
+text-align:center;
+background:rgba(37, 37, 37, 0);
+color:#f2f2f2;
+
+letter-spacing:1px;
+
+
+
+display:block;}
+ 
+.sidebar_menu a:hover {
+font-family: 'Bebas Neue', cursive;
+color:#ff5050;
+
+box-shadow:inset 150px 200px 50px #f2f2f2;}
+ 
+
+ 
+/*
+-------------------------------------------------*/
+
+
+
