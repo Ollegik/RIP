@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/941547f2e9.js" crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        main {
+            overflow-x: hidden;
+        }
+        footer {
+            overflow-x: hidden;
+        }
+        .signup>input:nth-of-type(1):invalid~input:nth-of-type(2):invalid~.progress>.progress-bar {
+            width: 0%;
+        }
+        .signup>input:nth-of-type(1):valid~input:nth-of-type(2):invalid~.progress>.progress-bar {
+            width: 50%;
+        }
+        .signup>input:nth-of-type(1):invalid~input:nth-of-type(2):valid~.progress>.progress-bar {
+            width: 50%;
+        }
+        .signup>input:nth-of-type(1):valid~input:nth-of-type(2):valid~.progress>.progress-bar {
+            width: 100%;
+        }
+    </style>
+
+    <title>lab07</title>
+</head>
+<body>
+<main class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid modal-header">
+            <a class="navbar-brand" href="lab07.html" style="color: magenta">RYAN GOSLING FAN PAGE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Droplist
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Broken</a>
+                    </li>
+                </ul>
+                <div class="float-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal" style="background-color: #0f5132; border-color: #0f5132">
+                        <i class="fa fa-user"></i> Sign Up
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="g-3 needs-validation signup" novalidate>
+                                        <div class="container row">
+                                            <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label">User name</label>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ryan Gosling is really hot" required>
+                                                <div class="invalid-feedback">
+                                                    Please choose a username.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label">First name</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Ryan" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your first name.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom03" class="form-label">Last name</label>
+                                                <input type="text" class="form-control" id="validationCustom03" placeholder="Gosling" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your last name.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                        <label for="validationCustom04" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="validationCustom04" required>
+                                        <div class="invalid-feedback">
+                                            Please enter password.
+                                        </div>
+                                        <p></p>
+                                        <label for="validationCustom05" class="form-label">Repeat password</label>
+                                        <input type="password" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Please enter password again.
+                                        </div>
+                                        <p></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0%" aria-valuemin="0%" aria-valuemax="100%"></div>
+                                        </div>
+                                        <p></p>
+                                        <label for="validationCustom06" class="form-label">Country</label>
+                                        <input type="text" class="form-control" id="validationCustom06">
+                                        <p></p>
+                                        <label for="validationCustom07" class="form-label">City</label>
+                                        <select class="form-select" id="validationCustom07">
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>Moscow</option>
+                                            <option>Saint-Petersburg</option>
+                                            <option>Ryan Gosling city</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <p></p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Agree to terms and conditions
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" type="submit">Sign Up</button>
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="background-color: #0f5132; border-color: #0f5132">
+                        <i class="fa fa-sign-in"></i> Login
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row needs-validation signup" novalidate>
+                                        <label for="validation_login_Custom01" class="form-label">User name</label>
+                                        <input type="text" class="form-control" id="validation_login_Custom01" placeholder="Ryan Gosling" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                        </div>
+                                        <p></p>
+                                        <label for="validation_login_Custom02" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="validation_login_Custom02" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your password.
+                                        </div>
+                                        <p></p>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" type="submit">Login</button>
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <table class="table table-dark table-borderless">
+        <tbody>
+            <tr>
+                <td class="align-bottom" style="text-align: right" width="50%"><h2>Who Is Ryan Gosling?</h2></td>
+                <td class="align-middle" rowspan="2"><img src="img/gostopless.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto"></td>
+            </tr>
+            <tr>
+                <td style="color:crimson" class="align-middle" style="text-align: right" width="50%">Canadian actor Ryan Gosling first found success by joining the cast of The Mickey Mouse Club in 1993. As an adult, he starred in the romantic hit The Notebook (2004) and garnered award nominations for Half Nelson (2006) and Lars and the Real Girl (2007). Gosling has also appeared in Blue Valentine (2010), Crazy, Stupid, Love (2011), The Ides of March (2011) and The Big Short (2015), among other projects. He received Golden Globe and Oscar nominations for his portrayal of a jazz pianist in the 2016 hit movie musical La La Land, and the following year he starred in the popular sci-fi flick Blade Runner 2049. Born on November 12, 1980, in London, Ontario, Canada, Ryan Thomas Gosling grew up in a working-class Church of Jesus Christ of Latter Day Saints family in the city of Cornwall. One of Sylvester Stallone's action films proved to be an early influence on the future thespian: "When I was in first grade I watched First Blood, and I filled my Fisher-Price Houdini kit with steak knives and brought them to school and started throwing them at kids in recess," Gosling later told Maclean's magazine. He was suspended for this dangerous reenactment, but he continued to be inspired by the movies he saw.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-dark table-borderless">
+        <tbody>
+        <tr>
+            <td class="align-middle" rowspan="2"><img src=".\img\gosling2.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto"></td>
+            <td class="align-bottom" style="text-align: left" width="50%"><h2>Who Decided Ryan Gosling Was Hot?</h2></td>
+        </tr>
+        <tr>
+
+            <td style="color: darksalmon" class="align-middle" style="text-align: left" width="50%">When I first saw the "Hey girl" meme—a.k.a. that moment Ryan Gosling went from The Notebook heartthrob to ultimate heartthrob—I was in college. I stared at Gosling's face on Tumblr for at least 12 minutes, trying to figure out why someone who looked so plain to me had the ability to make EVERY girls' panties drop. Why weren't mine dropping?
+
+I'm straight. And while I didn't really have celebrity crushes growing up ("It's just not realistic, I'll never meet them," I'd reason), I did have a very public infatuation with Zac Efron and later, Andrew Garfield. I wrote an essay about Zefron love for my high school newspaper. (Really, they published it.) I later became a journalist and got to interview Garfield for Cosmopolitan.com last year in person. The fact that I was able to ask a question coherently, make eye contact with him, and not faint during our 10-minute exchange is one of my proudest achievements.
+
+But Gosling made me feel nothing when I looked at him. He was your standard hipster: pleasant blue eyes, beanie-ready blond hair, and facial scruff that were forgettable to me.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-dark table-borderless">
+        <tbody>
+        <tr>
+            <td class="align-bottom" style="text-align: right" width="50%"><h2>Personal Life and Wife</h2></td>
+            <td class="align-middle" rowspan="2"><img src=".\img\gosgos2.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto"></td>
+        </tr>
+        <tr>
+            <td style="color: aquamarine" class="align-middle" style="text-align: right" width="50%">Gosling has worked to promote several social causes, including AIDS research, poverty relief and the humane treatment of animals. He likes to box and to make furniture—a skill he picked up while making The Notebook. Gosling is also an accomplished jazz guitarist and singer.
+
+Over the years, Gosling has been romantically linked to such co-stars as Sandra Bullock and McAdams. Since 2011, he has been romantically linked to Place Beyond the Pines co-star Mendes. In the summer of 2014, news broke that they were expecting their first child. Their daughter, Esmeralda Amada Gosling, was born that September. In April 2016, Mendes gave birth to the couple's second daughter, Amada Lee. In September 2016, US Weekly reported that Gosling and Mendes were secretly married earlier that year. </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+<footer class="bg-dark modal-footer">
+    <address class="container-fluid">
+        <p style="color: deepskyblue">GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL GOSLING IS SO COOL </p>
+    </address>
+    <p class="container-fluid text-center" style="color: #d3d3d4">2020 KOZINOV OLEG IC-55b</p>
+</footer>
+
+    <script>
+        // JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+<!-- Optional JavaScript -->
+<!-- Popper.js first, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
